@@ -78,7 +78,7 @@ if ($admin)
 
 					<div class="col-md-12">
 					<strong><?php echo $lang['WALLET_PASSUPDATE']; ?></strong>
-					<form action="index.php" method="POST" class="clearfix" id="pwdform">
+					<form action="index.php" method="POST" autocomplete="off" class="clearfix" id="pwdform">
 					    <input type="hidden" name="action" value="password" />
 					    <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
 					    <input type="password" class="form-control" name="oldpassword" placeholder="<?php echo $lang['WALLET_PASSUPDATEOLD']; ?>">

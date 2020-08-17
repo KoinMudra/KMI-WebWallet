@@ -51,7 +51,7 @@
 		<!-- Tab panes -->
 		<div class="tab-content text-center">
 			<div class="tab-pane active" id="login" role="tabpanel">
-				<form action="index.php" method="POST" class="clearfix">
+				<form action="index.php" method="POST" autocomplete="off" class="clearfix">
 				    <input type="hidden" name="action" value="login" />
 				   <div class="row text-center">
 				    <div class="input-group no-border input-lg">
@@ -85,7 +85,7 @@
 				</form>
 			</div>
 			<div class="tab-pane" id="signup" role="tabpanel">
-				<form action="index.php" method="POST" class="clearfix">
+				<form action="index.php" method="POST" autocomplete="off" class="clearfix">
 				    <input type="hidden" name="action" value="register" />
 				   <div class="row text-center">
 				    <div class="input-group no-border input-lg">

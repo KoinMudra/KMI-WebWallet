@@ -338,7 +338,7 @@ if (!empty($_SESSION['user_session'])) {
     $error = array('type' => "none", 'message' => "");
     if (!empty($_POST['action'])) {
 //	  require_once "classes/recaptchalib.php";
-	  $privatekey = "6LewWawZAAAAANw_ezEtNASl-YQbl-8uM7L4sEyH";
+	  $privatekey = "$secret";
 
         $username;$password;$auth;$captcha;
         if(isset($_POST['username']))

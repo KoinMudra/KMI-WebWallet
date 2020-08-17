@@ -7,7 +7,8 @@ ini_set('session.cookie_lifetime', 60*60); // expires in 60 minutes on user side
 
 session_start();
 header('Cache-control: private'); // IE 6 FIX
-
+header("X-XSS-Protection: 1; mode=block");
+header("X-Content-Type-Options: nosniff");
 define("WITHDRAWALS_ENABLED", true); //Disable withdrawals during maintenance
 
 include('jsonRPCClient.php');
@@ -33,7 +34,7 @@ $lang = $_GET['lang'];
 // register the session and set the cookie
 $_SESSION['lang'] = $lang;
 
-setcookie('lang', $lang, time() + (3600 * 24 * 30));
+setcookie('lang', $lang, time() + (3600 * 24 * 30), NULL, NULL, TRUE, TRUE);
 }
 else if(isSet($_SESSION['lang']))
 {

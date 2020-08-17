@@ -78,7 +78,7 @@
 				   </div>
 				   <div class="row">
 					<div class="col-md-9 text-center">
-					<div class="g-recaptcha" style="width: 304px; margin: 0 auto;" data-theme="dark" data-sitekey="6LewWawZAAAAAOdkCDGROBBCeb_Ul8BnESBbQ9RQ"></div>
+					<div class="g-recaptcha" style="width: 304px; margin: 0 auto;" data-theme="dark" data-sitekey=<?=$public?>></div>
 					</div>
 					<div class="col-md-3"><button type="submit" class="btn btn-default"><?php echo $lang['FORM_LOGIN']; ?></button></div>
 				   </div>
@@ -112,7 +112,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-9 text-center">
-					<div class="g-recaptcha" style="width: 304px; margin: 0 auto;" data-theme="dark" data-sitekey="6LewWawZAAAAAOdkCDGROBBCeb_Ul8BnESBbQ9RQ"></div>
+					<div class="g-recaptcha" style="width: 304px; margin: 0 auto;" data-theme="dark" data-sitekey=<?=$public?>></div>
 					</div>
 					<div class="col-md-3"><button type="submit" class="btn btn-default"><?php echo $lang['FORM_SIGNUP']; ?></button></div>
 				</div>
